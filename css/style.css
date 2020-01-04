@@ -140,6 +140,9 @@
 	font-weight: 400;
 }
 /*---------- main slider ----------*/
+.slider {
+	position: relative;
+}
 .slider-item {
 	height: 692px;	
 	position: relative;
@@ -258,7 +261,10 @@
 }
 /*---------------*/
 .slider-control {
-	margin-top: 113px; 	
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 20px;
 	display: flex;
 	list-style: none;
 }
