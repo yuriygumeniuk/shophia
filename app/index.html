@@ -12,9 +12,9 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	
+<div class="wrapper">
 <header>
-	<section class="control wrapper">
+	<section class="control">
 		<div class="control-block wrap">
 			<div class="control-phone">
 				<span class="phone-faw"></span>
@@ -54,123 +54,39 @@
 	</section>
 </header>
 
-<main>
-	<section class="slider wrapper swiper-container">
-		<div class="swiper-wrapper">
-			<!-- 1 -->
-			<div class="slider-item swiper-slide">1
-				<img src="img/slider_01.png" alt="" class="slider-img">
-				<div class="slider-baner">
-					<div class="baner-mid">MID-SEASON</div>
-					<div class="baner-sale">SALE</div>
-					
-					<div class="sale-up-to">
-						<div class="sale-up-to-before"></div>
-						<div class="sale-up-to__text">UP TO</div>
-						<div class="sale-up-to-before mir"></div>
-					</div>
+<main class='main'>
+	<!-- include('slider.html') -->
+	
+	<!-- ============================== -->
 
-					<div class="sale-off">
-						<span>50</span>
-						<span class="sale-off__text">%</span>
-						<span>OFF</span>
-					</div>
-				</div>
-				<a href="#!" class="slider-btn-shop">SHOP NOW</a>
-			</div>	
-			<!-- 2 -->
-			<div class="slider-item swiper-slide">2
-				<img src="img/slider_01.png" alt="" class="slider-img">
-				<div class="slider-baner">
-					<div class="baner-mid">MID-SEASON</div>
-					<div class="baner-sale">SALE</div>
-					
-					<div class="sale-up-to">
-						<div class="sale-up-to-before"></div>
-						<div class="sale-up-to__text">UP TO</div>
-						<div class="sale-up-to-before mir"></div>
-					</div>
+	<section class="shipping wrap">
 
-					<div class="sale-off">
-						<span>50</span>
-						<span class="sale-off__text">%</span>
-						<span>OFF</span>
-					</div>
-				</div>
-				<a href="#!" class="slider-btn-shop">SHOP NOW</a>
-			</div>	
-			<!-- 3 -->
-			<div class="slider-item swiper-slide">3
-				<img src="img/slider_01.png" alt="" class="slider-img">
-				<div class="slider-baner">
-					<div class="baner-mid">MID-SEASON</div>
-					<div class="baner-sale">SALE</div>
-					
-					<div class="sale-up-to">
-						<div class="sale-up-to-before"></div>
-						<div class="sale-up-to__text">UP TO</div>
-						<div class="sale-up-to-before mir"></div>
-					</div>
-
-					<div class="sale-off">
-						<span>50</span>
-						<span class="sale-off__text">%</span>
-						<span>OFF</span>
-					</div>
-				</div>
-				<a href="#!" class="slider-btn-shop">SHOP NOW</a>
-			</div>	
-			<!-- 4 -->
-			<div class="slider-item swiper-slide">4
-				<img src="img/slider_01.png" alt="" class="slider-img">
-				<div class="slider-baner">
-					<div class="baner-mid">MID-SEASON</div>
-					<div class="baner-sale">SALE</div>
-					
-					<div class="sale-up-to">
-						<div class="sale-up-to-before"></div>
-						<div class="sale-up-to__text">UP TO</div>
-						<div class="sale-up-to-before mir"></div>
-					</div>
-
-					<div class="sale-off">
-						<span>50</span>
-						<span class="sale-off__text">%</span>
-						<span>OFF</span>
-					</div>
-				</div>
-				<a href="#!" class="slider-btn-shop">SHOP NOW</a>
-			</div>	
-			<!--  -->
-		</div>
-    <div class="swiper-pagination"></div>
-	</section>
-
-	<section class="shipping wrap">		
-		<div class="shipping-free">
+		<div class="shipping-free shipping-item">
 			<div class="shipping-ico"></div>
 			<div class="shipping-tex">
 				<div class="shipping-tex__title">FREE SHIPPING</div>
 				<div class="shipping-tex__order">In Order Min $200</div>
 			</div>
 		</div>
-		<div class="shipping-time">
+		<div class="shipping-time shipping-item">
 			<div class="shipping-ico"></div>
 			<div class="shipping-text">
 				<div class="shipping-tex__title">30-DAYS RETURNS</div>
 				<div class="shipping-tex__order">Money Back  Guarantee</div>
 			</div>
 		</div>
-		<div class="shipping-support">
+		<div class="shipping-support shipping-item">
 			<div class="shipping-ico"></div>
 			<div class="shipping-text">
 				<div class="shipping-tex__title">24/7 SUPPORT</div>
 				<div class="shipping-tex__order">Lifestyme Support</div>
 			</div>
 		</div>
+
 	</section>
 
 	<section class="collection-big wrap">
+		
 		<div class="collection-title">
 			<div class="hr">
 				<div class="line"></div>
@@ -188,6 +104,7 @@
 			<div class="pictures-block">
 				<!-- 1 -->
 				<div class="pictures-block__edge">
+					<img src="img/collection-big-01.png" class="edge__img" alt="">
 					<div class="shadow">
 						<div class="shadow-plus">
 							<div class="plus-item"></div>
@@ -195,18 +112,17 @@
 						</div>							
 						<a href="#!" class="shadow-btn">SHOP NOW</a>
 					</div>
-					<img src="img/collection-big-01.png" alt="">
 				</div>
 				<!-- 2 -->
 				<div class="pictures-block__edge">
-					<div class="shadow">
-						<div class="shadow-plus">
-							<div class="plus-item"></div>
-							<div class="plus-item rotate"></div>
-						</div>							
+					<img src="img/collection-big-04.png" class="edge__img" alt="">
+					<div class="shadow">						
 						<a href="#!" class="shadow-btn">SHOP NOW</a>
 					</div>
-					<img src="img/collection-big-04.png" alt="">
+					<div class="shadow-plus">
+						<div class="plus-item"></div>
+						<div class="plus-item rotate"></div>
+					</div>	
 				</div>				
 			</div>
 			
@@ -217,6 +133,7 @@
 			<div class="pictures-block">
 				<!-- 3 -->
 				<div class="pictures-block__edge">
+					<img src="img/collection-big-02.png" class="edge__img" alt="">
 					<div class="shadow">
 						<div class="shadow-plus">
 							<div class="plus-item"></div>
@@ -224,10 +141,10 @@
 						</div>							
 						<a href="#!" class="shadow-btn">SHOP NOW</a>
 					</div>
-					<img src="img/collection-big-02.png" alt="">
 				</div>
 				<!-- 4 -->
 				<div class="pictures-block__edge">
+					<img src="img/collection-big-03.png" class="edge__img" alt="">
 					<div class="shadow">
 						<div class="shadow-plus">
 							<div class="plus-item"></div>
@@ -235,7 +152,6 @@
 						</div>							
 						<a href="#!" class="shadow-btn">SHOP NOW</a>
 					</div>					
-					<img src="img/collection-big-03.png" alt="">
 				</div>								
 			</div>
 		</div>
@@ -465,7 +381,7 @@
 	</section>
 	<div class="footer-bottom wrapper"></div>			
 </footer>
-
+</div>	
 <script src="js/jquery-3.4.1.js"></script>
 <script src="js/swiper.min.js"></script>
 <script src="js/custom.js"></script>
