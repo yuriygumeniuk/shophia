@@ -1073,7 +1073,7 @@
 /*---------- footer nav ----------*/
 
 .footer-nav {
-  height: 450px;
+  max-height: 450px;
   background-color: #141414;
 }
 
@@ -1085,6 +1085,7 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 70px;
+  padding-bottom: 40px;
 }
 
 .footer-block-navigation {
@@ -1094,12 +1095,13 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  width: 55%;
+  width: 65%;
 }
 
 .footer-nav-block-item {
-  margin-left: 121px;
+  padding-right: 15px;
   min-height: 200px;
+  width: 33.333%;
 }
 
 .footer-nav-block-item:first-child {
@@ -1129,8 +1131,18 @@
 /*---------- foter social block ----------*/
 
 .footer-block-social {
-  padding-left: 80px;
-  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-left: 20px;
+  width: 35%;
 }
 
 .footer-social-list {
@@ -1152,7 +1164,7 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-right: 18px;
   width: 50px;
   height: 50px;
@@ -1168,7 +1180,8 @@
 /*---------------*/
 
 .footer-subscribe {
-  margin-top: 60px;
+  margin-top: 30px;
+  width: 100%;
 }
 
 .footer-subscribe-field {
@@ -1181,9 +1194,10 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-left: 2px;
-  width: 360px;
+  max-width: 360px;
+  width: 100%;
   height: 40px;
   border: 1px solid #484848;
 }
@@ -1193,6 +1207,9 @@
 }
 
 .footer-subscribe-tex {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   padding-left: 22px;
   height: 100%;
   border: none;
@@ -1204,8 +1221,10 @@
 }
 
 .footer-subscribe-btn {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 101px;
+  flex: 0 0 101px;
   margin-right: 3px;
-  width: 101px;
   height: 32px;
   border: none;
   background-color: #323030;
@@ -1219,28 +1238,27 @@
 /*---------- section copyright ----------*/
 
 .copyright {
-  height: 205px;
+  max-height: 205px;
+  border-top: 1px solid #363636;
   background-color: #141414;
 }
 
 .copyright-block {
   position: relative;
-  border-top: 1px solid #363636;
-}
-
-.copyright-hint {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 40px;
 }
 
 .copyright-text {
-  margin-top: 30px;
   margin-left: 5px;
-  width: 255px;
   color: #363636;
   line-height: 18px;
   font-weight: 400;
@@ -1254,10 +1272,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  margin-top: 34px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-left: 10px;
 }
 

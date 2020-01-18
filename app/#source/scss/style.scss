@@ -826,22 +826,24 @@
 /*---------- FOOTER ----------*/
 /*---------- footer nav ----------*/
 .footer-nav {
-	height: 450px;
+	max-height: 450px;
 	background-color: #141414;
 }
 .footer-nav-block {
 	display: flex;
 	justify-content: space-between;
 	padding-top: 70px;
+	padding-bottom: 40px;
 }
 .footer-block-navigation {
 	display: flex;
 	justify-content: flex-start;
-	width: 55%;
+	width: 65%;
 }
 .footer-nav-block-item {
-	margin-left: 121px;
+	padding-right: 15px;
 	min-height: 200px;
+	width: 33.333%;
 }
 .footer-nav-block-item:first-child {
 	margin-left: 0;
@@ -865,8 +867,11 @@
 }
 /*---------- foter social block ----------*/
 .footer-block-social {
-	padding-left: 80px;
-	width: 45%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 20px;
+	width: 35%;
 }
 .footer-social-list {
 	display: flex;
@@ -878,7 +883,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-top: 50px;
+	margin-top: 30px;
 	margin-right: 18px;
 	width: 50px;
 	height: 50px;
@@ -893,15 +898,17 @@
 }
 /*---------------*/
 .footer-subscribe {
-	margin-top: 60px;
+	margin-top: 30px;
+	width: 100%;
 }
 .footer-subscribe-field {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-top: 50px;
+	margin-top: 30px;
 	margin-left: 2px;
-	width: 360px;
+	max-width: 360px;
+	width: 100%;
 	height: 40px;
 	border: 1px solid #484848;
 	&.err {
@@ -909,6 +916,7 @@
 	}
 }
 .footer-subscribe-tex {
+	flex: 1 1 auto;
 	padding-left: 22px;
 	height: 100%;
 	border: none;
@@ -920,8 +928,8 @@
 	font-family: 'Lato', sans-serif;
 }
 .footer-subscribe-btn {
+	flex: 0 0 101px;
 	margin-right: 3px;
-	width: 101px;
 	height: 32px;
 	border: none;
 	background-color: #323030;
@@ -934,24 +942,19 @@
 }
 /*---------- section copyright ----------*/
 .copyright {
-	height: 205px;
+	max-height: 205px;
+	border-top: 1px solid #363636;
 	background-color: #141414;
 }
 .copyright-block {
 	position: relative;
-	border-top: 1px solid #363636;
-}
-
-.copyright-hint {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translate(-50%,-50%);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 40px;
 }
 .copyright-text {
-	margin-top: 30px;
 	margin-left: 5px;
-	width: 255px;
 
 	color: #363636;
 	line-height: 18px;
@@ -962,8 +965,7 @@
 /*---------------*/
 .payments {
 	display: flex;
-	align-items: flex-start;
-	margin-top: 34px;
+	align-items: center;
 	margin-left: 10px;
 }
 .payments img {
